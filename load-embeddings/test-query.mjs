@@ -8,10 +8,12 @@ const response = await ollama.embeddings({
   prompt: "food",
 });
 
-const query = await sql`SELECT position, text FROM
-lines
+const query = await sql`SELECT
+  position, text
+FROM
+  lines
 ORDER BY
-embedding <#> ${`[${response.embedding.join(",")}]`} 
+  embedding <#> ${`[${response.embedding.join(",")}]`} 
 LIMIT 10`;
 
 console.log(query.map((row) => `${row.position} ${row.text}`).join("\n"));
