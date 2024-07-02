@@ -1,0 +1,30 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  ollama:
+    specifier: ^0.5.2
+    version: 0.5.2
+  postgres:
+    specifier: ^3.4.4
+    version: 3.4.4
+
+packages:
+
+  /ollama@0.5.2:
+    resolution: {integrity: sha512-nH9WEU8lGxX2RhTH9TukjwrQBlyoprIh8wIGMfFlprgzzJgAr+MFFmHzCt7BZt4SMFMXVwM2xnKrfshfHkBLyQ==}
+    dependencies:
+      whatwg-fetch: 3.6.20
+    dev: false
+
+  /postgres@3.4.4:
+    resolution: {integrity: sha512-IbyN+9KslkqcXa8AO9fxpk97PA4pzewvpi2B3Dwy9u4zpV32QicaEdgmF3eSQUzdRk7ttDHQejNgAEr4XoeH4A==}
+    engines: {node: '>=12'}
+    dev: false
+
+  /whatwg-fetch@3.6.20:
+    resolution: {integrity: sha512-EqhiFU6daOA8kpjOWTL0olhVOF3i7OrFzSYiGsEMB8GcXS+RrzauAERX65xMeNWVqxA6HXH2m69Z9LaKKdisfg==}
+    dev: false
